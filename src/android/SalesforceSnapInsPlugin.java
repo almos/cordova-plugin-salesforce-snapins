@@ -2,7 +2,8 @@ package org.apache.cordova.salesforce;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.NonNull;
+// import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.inputmethod.EditorInfo;
 
 import org.apache.cordova.CordovaInterface;
