@@ -51,7 +51,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 				<source url="https://github.com/goinstant/pods-specs-public"/>
 			</config>
 			<pods use-frameworks="true">
-				<pod name="ServiceSDK" spec="~> 222.0" />
+				<pod name="ServiceSDK" spec="~> 224.0" />
 			</pods>
 		</podspec>
 
