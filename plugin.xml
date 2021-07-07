@@ -43,6 +43,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 
 		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 		<resource-file src="ext/opentok-android-sdk-v3-3.0.2.aar" target="libs/opentok-android-sdk-v3-3.0.2.aar" />
+		<resource-file src="ext/opentok-android-sdk-v3-3.0.2.jar" target="libs/opentok-android-sdk-v3-3.0.2.jar" />
 	</platform>
 
 	<platform name="ios">
