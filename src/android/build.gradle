@@ -5,12 +5,15 @@ allprojects {
     maven {
       url 'https://s3.amazonaws.com/salesforcesos.com/android/maven/release'
     }
-    maven {
-      url 'http://tokbox.bintray.com/maven/'
-    }
+    flatDir {
+      dirs 'libs', 'src/main/libs'
+   }
   }
 }
 
+
 dependencies {
   implementation 'com.salesforce.service:servicesdk:218.0.0'
+  implementation fileTree(include: ['*.aar'], dir: 'libs')
+  implementation fileTree(include: ['*.aar'], dir: 'src/main/libs')
 }
