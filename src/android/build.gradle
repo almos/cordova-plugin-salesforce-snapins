@@ -14,6 +14,6 @@ allprojects {
 
 dependencies {
   implementation 'com.salesforce.service:servicesdk:218.0.0'
-  implementation fileTree(include: ['*.aar', '*.jar'], dir: 'libs')
-  implementation fileTree(include: ['*.aar', '*.jar'], dir: 'src/main/libs')
+  implementation fileTree(include: ['*.jar'], dir: 'libs')
+  implementation fileTree(include: ['*.jar'], dir: 'src/main/libs')
 }
