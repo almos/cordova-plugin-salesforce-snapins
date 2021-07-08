@@ -11,6 +11,11 @@ allprojects {
   }
 }
 
+android {
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    } 
+}
 
 dependencies {
   implementation 'com.salesforce.service:servicesdk:218.0.0'
