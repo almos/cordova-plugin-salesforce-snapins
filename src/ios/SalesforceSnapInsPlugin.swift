@@ -187,7 +187,7 @@ func hexStringToUIColor(_ hex: String) -> UIColor {
 
         let type = field["type"] as? String ?? "text"
         let label = field["label"] as? String ?? "Label"
-        let value = field["value"] as? String ?? "empty"
+        let value = field["value"] as? String ?? ""
         let transcriptField = field["transcriptField"] as? String ?? nil
         let isRequired = field["required"] as? Bool ?? false
         let keyboardType = field["keyboardType"] as? Int ?? 0
@@ -196,7 +196,7 @@ func hexStringToUIColor(_ hex: String) -> UIColor {
 
         switch type {
         case "text":
-            let newTextField = SCSPrechatTextInputObject(label: label)!
+            let newTextField = SCSPrechatTextInputObject(label: label, value: value)!
             newTextField.isRequired = isRequired
             newTextField.keyboardType = UIKeyboardType(rawValue: keyboardType)!
             newTextField.autocorrectionType = UITextAutocorrectionType(rawValue: autocorrectionType)!

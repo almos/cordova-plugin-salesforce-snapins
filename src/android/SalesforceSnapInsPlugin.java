@@ -2,7 +2,7 @@ package org.apache.cordova.salesforce;
 
 import android.app.Activity;
 import android.content.Context;
-// import android.support.annotation.NonNull;
+//import android.support.annotation.NonNull;
 import androidx.annotation.NonNull;
 import android.view.inputmethod.EditorInfo;
 
@@ -191,7 +191,7 @@ public class SalesforceSnapInsPlugin extends CordovaPlugin {
         try {
             value = (String) field.get("value");
         } catch (JSONException e) {
-            value = "empty";
+            value = "";
         }
 
         try {
@@ -228,6 +228,7 @@ public class SalesforceSnapInsPlugin extends CordovaPlugin {
             case "text":
                 PreChatTextInputField newTextField = new PreChatTextInputField.Builder()
                         .required(isRequired)
+                        .initialValue(value)
                         .inputType(this.mapKeyboardType(keyboardType))
                         .mapToChatTranscriptFieldName(transcriptField)
                         .build(label, label);
